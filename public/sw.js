@@ -3,7 +3,7 @@
 // data. It does not need to handle PDFs specially — once a file is
 // downloaded through the browser, it already lives on the device.
 
-const CACHE_NAME = 'sudd-library-v1';
+const CACHE_NAME = 'sudd-library-v2';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

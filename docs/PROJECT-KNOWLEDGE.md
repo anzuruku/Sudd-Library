@@ -70,7 +70,7 @@ either.
 |---|---|---|
 | Site generator | Astro | Every page generated from `src/data/curriculum.ts` |
 | Hosting | Cloudflare Pages | No bandwidth ceiling, free, fast CDN |
-| Code + version control | GitHub (`ANZNEXUS-dev/sudd-library`) | Free, standard for open source |
+| Code + version control | GitHub (`anzuruku/Sudd-Library`) | Free, standard for open source |
 | File storage | Cloudflare R2 (public bucket) + direct NCDC links | Zero egress fees; textbooks cost nothing to host at all |
 | Search | Pagefind | Static full-text index, no server |
 | Offline support | PWA (manifest + service worker) | Caches visited pages for offline reuse |

@@ -14,7 +14,7 @@ git init
 git add .
 git commit -m "Initial scaffold"
 git branch -M main
-git remote add origin https://github.com/ANZNEXUS-dev/sudd-library.git
+git remote add origin https://github.com/anzuruku/Sudd-Library.git
 git push -u origin main
 ```
 
