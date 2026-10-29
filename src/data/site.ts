@@ -6,6 +6,8 @@ export const SITE = {
     'A free, open-access library of lesson notes, schemes of work, and past papers for South Sudanese schools.',
   org: 'Anzuruku Jacob',
   author: 'Anzuruku Jacob',
+  builder: 'Veridan Digital',
+  builderUrl: 'https://veridandigital.pages.dev/', // change when the agency domain changes
   repoUrl: 'https://github.com/anzuruku/Sudd-Library',
   contactEmail: 'anznexus00@gmail.com',
   whatsapp: '211925229833', // digits only, no + or leading 0
