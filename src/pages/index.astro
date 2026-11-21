@@ -34,10 +34,12 @@ const iconFor = { primary: 'primary', secondary: 'secondary', aes: 'aes' } as co
         <button type="submit">Search</button>
       </form>
 
-      {total > 0 && (
-        <p class="hero-count"><strong>{total}</strong> resources and growing</p>
-      )}
-      <p class="hero-note">Independent project, aligned to the NCDC curriculum.</p>
+      <div class="hero-meta">
+        {total > 0 && (
+          <p class="hero-count"><strong>{total}</strong> resources and growing</p>
+        )}
+        <p class="hero-note">Independent project, aligned to the NCDC curriculum.</p>
+      </div>
     </div>
   </section>
 
@@ -171,11 +173,13 @@ const iconFor = { primary: 'primary', secondary: 'secondary', aes: 'aes' } as co
   .empty-note { font-size: 12.5px; color: var(--ink-60); line-height: 1.5; }
 
   @media (min-width: 900px) {
-    .hero { padding: 64px 32px 56px; text-align: left; }
+    .hero { padding: 36px 32px 32px; text-align: left; }
     .hero-inner { max-width: calc(var(--max-width) - 64px); }
-    .hero h1 { font-size: 56px; max-width: 20ch; }
-    .hero-sub { font-size: 18px; max-width: 54ch; }
-    .search-form { margin: 0 0 22px; max-width: 560px; }
+    .hero h1 { font-size: 42px; margin: 0 0 10px; max-width: 26ch; }
+    .hero-sub { font-size: 17px; margin: 0 0 18px; max-width: 60ch; }
+    .search-form { margin: 0 0 16px; max-width: 560px; }
+    .hero-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 22px; }
+    .hero-note { margin: 0; }
     .level-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
