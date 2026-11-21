@@ -167,4 +167,13 @@ const mailLink = `mailto:${SITE.contactEmail}?subject=${encodeURIComponent('Sudd
   summary { font-size: 14px; font-weight: 600; cursor: pointer; color: var(--ink); }
   details p { margin: 8px 0 0; }
   .about-small { margin-top: 26px; }
+
+  @media (min-width: 900px) {
+    .about-hero { padding: 56px 32px 48px; text-align: left; }
+    .about-hero-inner { max-width: calc(var(--max-width) - 64px); }
+    .about-hero h1 { font-size: 52px; max-width: 20ch; }
+    .about-hero p { max-width: 56ch; }
+    .about-body { max-width: var(--max-width); padding: 16px 32px 64px; }
+    .about-body > * { max-width: 68ch; }
+  }
 </style>

@@ -31,4 +31,9 @@ import { Content } from '../../../DISCLAIMER.md';
   }
   .disclaimer-body :global(ul) { padding-left: 20px; }
   .disclaimer-body :global(a) { color: var(--deep-hover); text-decoration: underline; }
+
+  @media (min-width: 900px) {
+    .disclaimer-body { padding: 24px 32px 64px; }
+    .disclaimer-body > :global(*) { max-width: 68ch; }
+  }
 </style>
