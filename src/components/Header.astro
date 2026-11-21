@@ -83,4 +83,8 @@ const isHome = Astro.url.pathname === '/' || Astro.url.pathname.startsWith('/sea
     width: 100%;
   }
   .search-form input::placeholder { color: var(--ink-35); }
+
+  @media (min-width: 900px) {
+    .header-inner { padding: 14px 32px; }
+  }
 </style>

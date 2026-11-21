@@ -63,4 +63,13 @@ const { level } = Astro.props;
     margin-left: 6px;
   }
   .class-arrow { margin-left: auto; color: var(--ink-35); font-size: 18px; }
+
+  @media (min-width: 900px) {
+    .page-h1 { font-size: 32px; }
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px;
+    }
+  }
 </style>

@@ -169,4 +169,23 @@ const iconFor = { primary: 'primary', secondary: 'secondary', aes: 'aes' } as co
     color: var(--ink-60);
   }
   .empty-note { font-size: 12.5px; color: var(--ink-60); line-height: 1.5; }
+
+  @media (min-width: 900px) {
+    .hero { padding: 64px 32px 56px; text-align: left; }
+    .hero-inner { max-width: calc(var(--max-width) - 64px); }
+    .hero h1 { font-size: 56px; max-width: 20ch; }
+    .hero-sub { font-size: 18px; max-width: 54ch; }
+    .search-form { margin: 0 0 22px; max-width: 560px; }
+    .level-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .recent-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 48px;
+    }
+    .recent-row:nth-last-child(-n + 2) { border-bottom: none; }
+  }
 </style>

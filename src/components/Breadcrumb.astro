@@ -29,4 +29,12 @@ const { items } = Astro.props as Props;
   .crumb a:hover { color: var(--deep-hover); }
   .crumb b { color: var(--ink); font-weight: 500; }
   .sep { margin: 0 6px; }
+
+  @media (min-width: 900px) {
+    .crumb {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 20px 32px 0;
+    }
+  }
 </style>
